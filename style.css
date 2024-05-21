@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(166, 113, 216);
+}
+
+img {
+    width: 120px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: rgb(21, 139, 145);
+    color: rgb(16, 16, 16);
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.avater {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+#about {
+    background-color: rgb(28, 79, 75);
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: 25px;
+    margin: 3%;
+}
+
+#work {
+    background-color: aqua;
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: 25px;
+    margin: 3%;
+}
+
+.contact {
+    background: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info iframe {
+    height: 400px;
+}
+
+.contact-info div {
+    color: rgb(255, 255, 255);
+}
+.contact-info h3 {
+    color: rgb(55, 112, 161);
+    font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid cornsilk;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: violet;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: azure;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: violet;
+    color: brown;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: rgb(0, 5, 14);
+    background: violet;
+}
+
+.contact-info a {
+    color: rgb(29, 28, 28);
+}
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    section,
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    section h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.work-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work-gallery a {
+    margin-bottom: 20px;
+}
+
+.work-gallery img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.work-gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgb(151, 2, 151);
+    color: aliceblue;
+    padding: 20px 0;
+}
